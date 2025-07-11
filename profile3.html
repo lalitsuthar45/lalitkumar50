@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lalit Suthar - Home</title>
+  <meta name="description" content="Welcome to Lalit Suthar's portfolio. Web Developer, Video Editor, and Creative Designer from Rajasthan.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #232526 0%, #414345 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #18181a;
+      padding: 18px 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #00fff0;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav ul li a:hover {
+      color: #00fff0;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      padding: 40px 20px;
+      gap: 60px;
+    }
+    .hero-content {
+      max-width: 500px;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #00fff0;
+    }
+    .hero-content h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 25px;
+      color: #ffb347;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+    }
+    .hero-content .btn {
+      padding: 12px 28px;
+      background: #00fff0;
+      color: #18181a;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      margin-right: 15px;
+      transition: background 0.2s;
+    }
+    .hero-content .btn:hover {
+      background: #00bfae;
+      color: #fff;
+    }
+    .hero-img img {
+      width: 320px;
+      max-width: 90vw;
+      border-radius: 50%;
+      box-shadow: 0 8px 40px #00fff066;
+      border: 5px solid #fff;
+      background: #232526;
+      object-fit: cover;
+    }
+    .social {
+      margin-top: 40px;
+    }
+    .social a {
+      color: #fff;
+      font-size: 2rem;
+      margin-right: 20px;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+    .social a:hover {
+      color: #00fff0;
+    }
+    /* Qualification Section CSS */
+    .secondsection {
+      padding: 40px 20px 20px 20px;
+      text-align: center;
+    }
+    .secondsection h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00fff0;
+    }
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .vertical {
+      background: #18181a;
+      padding: 20px;
+      max-width: 250px;
+      color: #00fff0;
+      border-radius: 10px;
+      width: 250px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0,255,240,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-top {
+      width: 40px;
+    }
+    .vertical-title {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #00fff0;
+    }
+    .vertical-desc {
+      background: #232526;
+      width: 100%;
+      height: 35px;
+      border-radius: 5px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      color: #00fff0;
+    }
+    .scroll-wrapper {
+      position: absolute;
+      white-space: nowrap;
+      animation: scroll-left 8s linear infinite;
+      color: #e8eded;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    @keyframes scroll-left {
+      0% { left: 100%; }
+      100% { left: -100%; }
+    }
+    .social-links {
+      margin-top: 60px;
+    }
+    .social-links h3 {
+      font-size: 25px;
+      color: #e68c04;
+      margin-bottom: 10px;
+    }
+    .social-links a {
+      margin: 15px;
+      font-size: 30px;
+      color: #00fff0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #ff00ff;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px 10px;
+      }
+      .box {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Lalit Suthar</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Lalit Suthar</h1>
+      <h2><span id="typed"></span></h2>
+      <p>
+        I'm a passionate Web Developer, Video Editor, and Creative Designer from Rajasthan.<br>
+        I love building beautiful websites and editing engaging videos. Let's connect and create something amazing!
+      </p>
+      <a href="meraresume.pdf" download class="btn">Download Resume</a>
+      <a href="mailto:sutharlalit791@example.com" class="btn">Contact Me</a>
+      <div class="social">
+        <a href="https://www.instagram.com/lucky_str_45" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/lalit-suthar-445646334" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sutharlalit791@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="myimage.jpg" alt="Lalit Suthar Profile Photo">
+    </div>
+  </section>
+  <!-- Qualification Section Start -->
+  <section class="secondsection">
+    <h1>My Qualification</h1>
+    <div class="box">
+      <div class="vertical">
+        <img class="image-top" src="school1.jpg" alt="">
+        <div class="vertical-title">1st-4th (2013–2016)</div>
+        <div class="vertical-desc">
+          <div class="scroll-wrapper">Aapeshewar Vidya Mandir, Adawada. (Raj)</div>
+        </div>
+      </div>
+      <div class="vertical">
+        <img class="image-top" src="school1.jpg" alt="">
+        <div class="vertical-title">4th–10th (2016–2022)</div>
+        <div class="vertical-desc">
+          <div class="scroll-wrapper">Adarsh Public Sec. School, Siyana. (Raj)</div>
+        </div>
+      </div>
+      <div class="vertical">
+        <img class="image-top" src="school1.jpg" alt="">
+        <div class="vertical-title">11th–12th (2022–2024)</div>
+        <div class="vertical-desc">
+          <div class="scroll-wrapper">MG Govt. School, Siyana. (Raj)</div>
+        </div>
+      </div>
+      <div class="vertical">
+        <img class="image-top" src="photo.jpg" alt="">
+        <div class="vertical-title">BCA 1st year (Present)</div>
+        <div class="vertical-desc">
+          <div class="scroll-wrapper">SP College, Sirohi. (Raj)</div>
+        </div>
+      </div>
+    </div>
+    <div class="social-links">
+      <h3>Let's follow and contact me</h3>
+      <a href="https://www.instagram.com/lucky_str_45" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/lalit-suthar-445646334" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sutharlalit791@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+  <!-- Qualification Section End -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["Web Developer", "Video Editor", "Creative Designer"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+</html>
