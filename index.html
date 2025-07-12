@@ -82,12 +82,23 @@
       font-weight: 600;
       cursor: pointer;
       text-decoration: none;
-      margin-right: 15px;
       transition: background 0.2s;
     }
     .hero-content .btn:hover {
       background: #00bfae;
       color: #fff;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .btn-group .btn {
+      width: 100%;
+      max-width: 220px;
+      text-align: center;
     }
     .hero-img img {
       width: 320px;
@@ -111,7 +122,6 @@
     .social a:hover {
       color: #00fff0;
     }
-    /* Qualification Section CSS */
     .secondsection {
       padding: 40px 20px 20px 20px;
       text-align: center;
@@ -205,7 +215,6 @@
         align-items: center;
       }
     }
-    
   </style>
 </head>
 <body>
@@ -227,8 +236,13 @@
         I'm a passionate Web Developer, Video Editor, and Creative Designer from Rajasthan.<br>
         I love building beautiful websites and editing engaging videos. Let's connect and create something amazing!
       </p>
-      <a href="meraresume.pdf" download class="btn">Download Resume</a>
-      <a href="mailto:sutharlalit791@example.com" class="btn">Contact Me</a>
+
+      <!-- ✅ BUTTON GROUP FIXED FOR MOBILE -->
+      <div class="btn-group">
+        <a href="meraresume.pdf" download class="btn">Download Resume</a>
+        <a href="mailto:sutharlalit791@example.com" class="btn">Contact Me</a>
+      </div>
+
       <div class="social">
         <a href="https://www.instagram.com/lucky_str_45" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/lalit-suthar-445646334" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -239,6 +253,7 @@
       <img src="myimage.jpg" alt="Lalit Suthar Profile Photo">
     </div>
   </section>
+
   <!-- Qualification Section Start -->
   <section class="secondsection">
     <h1>My Qualification</h1>
@@ -280,6 +295,7 @@
     </div>
   </section>
   <!-- Qualification Section End -->
+
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed("#typed", {
